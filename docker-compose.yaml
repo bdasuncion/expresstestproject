@@ -1,0 +1,10 @@
+version: '3.18'
+services:
+    app:
+      build: ./app
+      volumes:
+          - "./:/app"
+      ports:
+          - "3000:3000"
+      stdin_open: true
+      tty: true
